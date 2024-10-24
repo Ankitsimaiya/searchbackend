@@ -3,7 +3,7 @@ node_modules
 package-lock.json
 npm-shrinkwrap.json
 *.log
-*.gz
+*.gz 
 
 # Coveralls
 .nyc_output

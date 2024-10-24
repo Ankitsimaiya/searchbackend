@@ -2,7 +2,8 @@ const { default: axios } = require("axios")
 
 const youtube = async (req,res) => {
     const YOUTUBE_API_KEY = "AIzaSyCodcvFJHBsxLWFTzGLFEHeFyCnyztWRFk"
-    const searchTerm = req.args.get('q')
+    const searchTerm = req.query.q
+    console.log("searchTerm" , searchTerm)
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchTerm}&key=${YOUTUBE_API_KEY}&type=video`
     console.log(url)
     try {
