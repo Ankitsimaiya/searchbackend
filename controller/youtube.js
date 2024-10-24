@@ -9,6 +9,7 @@ const youtube = async (req,res) => {
     try {
         const response = await axios.get(url)
         console.log("data 1 " ,response.data)
+        console.log("res",response.data.items)
        return res.status(200).json(response.data.items)
     } catch (error) { 
         res.status(500).json({msg : "error",error})
