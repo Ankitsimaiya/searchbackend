@@ -7,6 +7,6 @@ const router = express.Router()
 
 router.get("/youtube", youtube)
 router.get("/gooCus", googleCustomSearch)
-router.get("/gooSch", googleScholer)
+router.get("/gooSch", googleScholer) 
 
 module.exports = router
